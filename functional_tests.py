@@ -36,6 +36,9 @@ class NewVisitorTest(unittest.TestCase):
         # "1: 購買孔雀羽毛"，一個待辦事項清單項目
         inputbox.send_keys(Keys.ENTER)
 
+        import time
+        time.sleep(10)
+
         table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr')
         self.assertTrue(
