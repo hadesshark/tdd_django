@@ -3,12 +3,12 @@ F
 FAIL: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "functional_tests.py", line 42, in test_can_start_a_list_and_retrieve_it_later
-    any(row.text == '1: Buy peacock feathers' for row in rows)
-AssertionError: False is not true
+  File "functional_tests.py", line 43, in test_can_start_a_list_and_retrieve_it_later
+    "New to-do item did not appear in table"
+AssertionError: False is not true : New to-do item did not appear in table
 
 ----------------------------------------------------------------------
-Ran 1 test in 8.101s
+Ran 1 test in 7.792s
 
 FAILED (failures=1)
 'NoneType' object has no attribute 'path'
