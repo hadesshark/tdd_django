@@ -1,14 +1,21 @@
-F
+E
 ======================================================================
-FAIL: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
+ERROR: lists.tests (unittest.loader._FailedTest)
 ----------------------------------------------------------------------
+ImportError: Failed to import test module: lists.tests
 Traceback (most recent call last):
-  File "functional_tests.py", line 18, in test_can_start_a_list_and_retrieve_it_later
-    self.assertIn('To-Do', self.browser.title)
-AssertionError: 'To-Do' not found in 'Welcome to Django'
+  File "/usr/local/Cellar/python3/3.5.2_1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/local/Cellar/python3/3.5.2_1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/Users/hadesshark/Documents/django_site/superlists/lists/tests.py", line 3, in <module>
+    from lists.views import home_page
+ImportError: cannot import name 'home_page'
+
 
 ----------------------------------------------------------------------
-Ran 1 test in 3.452s
+Ran 1 test in 0.000s
 
-FAILED (failures=1)
-'NoneType' object has no attribute 'path'
+FAILED (errors=1)
+Creating test database for alias 'default'...
+Destroying test database for alias 'default'...
