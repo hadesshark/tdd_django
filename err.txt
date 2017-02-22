@@ -1,7 +1,14 @@
-..
+F
+======================================================================
+FAIL: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
 ----------------------------------------------------------------------
-Ran 2 tests in 0.001s
+Traceback (most recent call last):
+  File "functional_tests.py", line 20, in test_can_start_a_list_and_retrieve_it_later
+    self.fail('Finish the test!')
+AssertionError: Finish the test!
 
-OK
-Creating test database for alias 'default'...
-Destroying test database for alias 'default'...
+----------------------------------------------------------------------
+Ran 1 test in 3.479s
+
+FAILED (failures=1)
+'NoneType' object has no attribute 'path'
