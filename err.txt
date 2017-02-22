@@ -1,7 +1,15 @@
-.
+E.
+======================================================================
+ERROR: test_home_page_returns_correct_html (lists.tests.HomePageTest)
 ----------------------------------------------------------------------
-Ran 1 test in 0.001s
+Traceback (most recent call last):
+  File "/Users/hadesshark/Documents/django_site/superlists/lists/tests.py", line 14, in test_home_page_returns_correct_html
+    response = home_page(request)
+TypeError: home_page() takes 0 positional arguments but 1 was given
 
-OK
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (errors=1)
 Creating test database for alias 'default'...
 Destroying test database for alias 'default'...
