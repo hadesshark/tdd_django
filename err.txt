@@ -1,15 +1,7 @@
-F..
-======================================================================
-FAIL: test_home_page_can_save_a_POST_request (lists.tests.HomePageTest)
+...
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/Users/hadesshark/Documents/django_site/superlists/lists/tests.py", line 26, in test_home_page_can_save_a_POST_request
-    self.assertIn('A new list item', response.content.decode())
-AssertionError: 'A new list item' not found in '<html>\n    <head>\n        <title>To-Do lists</title>\n    </head>\n    <body>\n        <h1>Your To-Do list</h1>\n        <form action="" method="POST">\n            <input type="text" name="item_text" placeholder="Enter a to-do item" id="id_new_item">\n            \n        </form>\n        <table id="id_list_table">\n\n        </table>\n    </body>\n</html>\n'
+Ran 3 tests in 0.004s
 
-----------------------------------------------------------------------
-Ran 3 tests in 0.005s
-
-FAILED (failures=1)
+OK
 Creating test database for alias 'default'...
 Destroying test database for alias 'default'...
