@@ -1,7 +1,15 @@
-...
+F
+======================================================================
+FAIL: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
 ----------------------------------------------------------------------
-Ran 3 tests in 0.006s
+Traceback (most recent call last):
+  File "functional_tests.py", line 44, in test_can_start_a_list_and_retrieve_it_later
+    table.text,
+AssertionError: False is not true : New to-do item did not appear in table -- its text was:
+Buy peacock feathers
 
-OK
-Creating test database for alias 'default'...
-Destroying test database for alias 'default'...
+----------------------------------------------------------------------
+Ran 1 test in 4.884s
+
+FAILED (failures=1)
+'NoneType' object has no attribute 'path'
