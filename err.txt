@@ -1,15 +1,7 @@
-F.
-======================================================================
-FAIL: test_home_page_returns_correct_html (lists.tests.HomePageTest)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/Users/hadesshark/Documents/django_site/superlists/lists/tests.py", line 15, in test_home_page_returns_correct_html
-    self.assertTrue(response.content.startswith(b'<html>'))
-AssertionError: False is not true
-
+..
 ----------------------------------------------------------------------
 Ran 2 tests in 0.001s
 
-FAILED (failures=1)
+OK
 Creating test database for alias 'default'...
 Destroying test database for alias 'default'...
