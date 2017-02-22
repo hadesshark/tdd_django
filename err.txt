@@ -1,7 +1,15 @@
-...
+F..
+======================================================================
+FAIL: test_home_page_can_save_a_POST_request (lists.tests.HomePageTest)
 ----------------------------------------------------------------------
-Ran 3 tests in 0.004s
+Traceback (most recent call last):
+  File "/Users/hadesshark/Documents/django_site/superlists/lists/tests.py", line 31, in test_home_page_can_save_a_POST_request
+    self.assertEqual(response.content.decode(), expected_html)
+AssertionError: 'A new list item' != '<html>\n    <head>\n        <title>To-Do [319 chars]l>\n'
 
-OK
+----------------------------------------------------------------------
+Ran 3 tests in 0.010s
+
+FAILED (failures=1)
 Creating test database for alias 'default'...
 Destroying test database for alias 'default'...
