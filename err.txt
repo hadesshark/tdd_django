@@ -1,15 +1,15 @@
-E.
+F.
 ======================================================================
-ERROR: test_home_page_returns_correct_html (lists.tests.HomePageTest)
+FAIL: test_home_page_returns_correct_html (lists.tests.HomePageTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/Users/hadesshark/Documents/django_site/superlists/lists/tests.py", line 15, in test_home_page_returns_correct_html
     self.assertTrue(response.content.startswith(b'<html>'))
-AttributeError: 'NoneType' object has no attribute 'content'
+AssertionError: False is not true
 
 ----------------------------------------------------------------------
 Ran 2 tests in 0.001s
 
-FAILED (errors=1)
+FAILED (failures=1)
 Creating test database for alias 'default'...
 Destroying test database for alias 'default'...
