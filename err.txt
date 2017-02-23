@@ -3,12 +3,11 @@ F
 FAIL: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "functional_tests.py", line 45, in test_can_start_a_list_and_retrieve_it_later
-    self.fail('Finish the test!')
-AssertionError: Finish the test!
+  File "functional_tests.py", line 56, in test_can_start_a_list_and_retrieve_it_later
+    self.assertIn('1: Buy peacock feathers', [row.text for row in rows])
+AssertionError: '1: Buy peacock feathers' not found in ['1: Use peacock feathers to make a fly']
 
 ----------------------------------------------------------------------
-Ran 1 test in 4.229s
+Ran 1 test in 19.315s
 
 FAILED (failures=1)
-'NoneType' object has no attribute 'path'
