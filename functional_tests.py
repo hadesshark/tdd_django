@@ -40,6 +40,10 @@ class NewVisitorTest(unittest.TestCase):
         # 當她按下 enter 時，網頁會更新，現在網頁列出
         # "1: 購買孔雀羽毛"，一個待辦事項清單項目
         inputbox.send_keys(Keys.ENTER)
+
+        import time
+        time.sleep(10)
+
         self.check_for_row_in_list_table('1: Buy peacock feathers')
 
         # 此時仍然有一個文字方塊，讓她可以加入另一個項目。
@@ -48,20 +52,17 @@ class NewVisitorTest(unittest.TestCase):
         inputbox.send_keys('Use peacock feathers to make a fly')
         inputbox.send_keys(Keys.ENTER)
 
+        time.sleep(10)
+
         # 網頁再次更新，現在她的清單有這兩個項目
         self.check_for_row_in_list_table('1: Buy peacock feathers')
 
-        import time
         time.sleep(10)
 
-        self.check_for_row_in_list_table('2: Use peacock feathers')
+        self.check_for_row_in_list_table('2: Use peacock feathers to make a fly')
 
         time.sleep(10)
 
-        self.assertIn(
-            '2: Use peacock feathers to make a fly',
-            [row.text for row in rows]
-        )
         # Edith 不知道網站能否記得她的清單
         # 接著她看到網站產生一個唯一的 URL 給她
         # 網頁有一些文字說明這個效果

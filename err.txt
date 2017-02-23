@@ -3,11 +3,11 @@ F
 FAIL: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "functional_tests.py", line 25, in test_can_start_a_list_and_retrieve_it_later
-    self.assertIn('To-Do', self.browser.title)
-AssertionError: 'To-Do' not found in 'OperationalError at /'
+  File "functional_tests.py", line 69, in test_can_start_a_list_and_retrieve_it_later
+    self.fail('Finish the test!')
+AssertionError: Finish the test!
 
 ----------------------------------------------------------------------
-Ran 1 test in 14.452s
+Ran 1 test in 50.917s
 
 FAILED (failures=1)
