@@ -1,15 +1,19 @@
-F
+E
 ======================================================================
-FAIL: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
+ERROR: lists.tests (unittest.loader._FailedTest)
 ----------------------------------------------------------------------
+ImportError: Failed to import test module: lists.tests
 Traceback (most recent call last):
-  File "functional_tests.py", line 57, in test_can_start_a_list_and_retrieve_it_later
-    self.check_for_row_in_list_table('2: Use peacock feathers')
-  File "functional_tests.py", line 17, in check_for_row_in_list_table
-    self.assertIn(row_text, [row.text for row in rows])
-AssertionError: '2: Use peacock feathers' not found in ['1: Use peacock feathers to make a fly']
+  File "C:\Anaconda3\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Anaconda3\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\chobits\Documents\site\tdd_django\lists\tests.py", line 6, in <module>
+    from lists.models import Item
+ImportError: cannot import name 'Item'
+
 
 ----------------------------------------------------------------------
-Ran 1 test in 20.450s
+Ran 1 test in 0.000s
 
-FAILED (failures=1)
+FAILED (errors=1)
