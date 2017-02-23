@@ -1,19 +1,13 @@
-E
+...E
 ======================================================================
-ERROR: lists.tests (unittest.loader._FailedTest)
+ERROR: test_saving_and_retrieving_items (lists.tests.ItemModelTest)
 ----------------------------------------------------------------------
-ImportError: Failed to import test module: lists.tests
 Traceback (most recent call last):
-  File "C:\Anaconda3\lib\unittest\loader.py", line 428, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Anaconda3\lib\unittest\loader.py", line 369, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\chobits\Documents\site\tdd_django\lists\tests.py", line 6, in <module>
-    from lists.models import Item
-ImportError: cannot import name 'Item'
-
+  File "C:\Users\chobits\Documents\site\tdd_django\lists\tests.py", line 39, in test_saving_and_retrieving_items
+    first_item.save()
+AttributeError: 'Item' object has no attribute 'save'
 
 ----------------------------------------------------------------------
-Ran 1 test in 0.000s
+Ran 4 tests in 0.094s
 
 FAILED (errors=1)
