@@ -1,13 +1,13 @@
-.F.....
+F
 ======================================================================
-FAIL: test_home_page_displays_all_list_items (lists.tests.HomePageTest)
+FAIL: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\chobits\Documents\site\tdd_django\lists\tests.py", line 53, in test_home_page_displays_all_list_items
-    self.assertIn('itemey 1', response.content.decode())
-AssertionError: 'itemey 1' not found in '<html>\n    <head>\n        <title>To-Do lists</title>\n    </head>\n    <body>\n        <h1>Your To-Do list</h1>\n        <form method="POST">\n            <input name="item_text" placeholder="Enter a to-do item" id="id_new_item">\n            \n        </form>\n        <table id="id_list_table">\n            <tr>\n                <td>1: </td>\n            </tr>\n        </table>\n    </body>\n</html>\n'
+  File "functional_tests.py", line 25, in test_can_start_a_list_and_retrieve_it_later
+    self.assertIn('To-Do', self.browser.title)
+AssertionError: 'To-Do' not found in 'OperationalError at /'
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.045s
+Ran 1 test in 14.452s
 
 FAILED (failures=1)
