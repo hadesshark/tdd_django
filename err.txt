@@ -1,5 +1,13 @@
-......
+.F.....
+======================================================================
+FAIL: test_home_page_displays_all_list_items (lists.tests.HomePageTest)
 ----------------------------------------------------------------------
-Ran 6 tests in 0.020s
+Traceback (most recent call last):
+  File "C:\Users\chobits\Documents\site\tdd_django\lists\tests.py", line 53, in test_home_page_displays_all_list_items
+    self.assertIn('itemey 1', response.content.decode())
+AssertionError: 'itemey 1' not found in '<html>\n    <head>\n        <title>To-Do lists</title>\n    </head>\n    <body>\n        <h1>Your To-Do list</h1>\n        <form method="POST">\n            <input name="item_text" placeholder="Enter a to-do item" id="id_new_item">\n            \n        </form>\n        <table id="id_list_table">\n            <tr>\n                <td>1: </td>\n            </tr>\n        </table>\n    </body>\n</html>\n'
 
-OK
+----------------------------------------------------------------------
+Ran 7 tests in 0.045s
+
+FAILED (failures=1)
