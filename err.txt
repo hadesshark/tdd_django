@@ -1,5 +1,13 @@
-.....
+F....
+======================================================================
+FAIL: test_home_page_can_save_a_POST_request (lists.tests.HomePageTest)
 ----------------------------------------------------------------------
-Ran 5 tests in 0.020s
+Traceback (most recent call last):
+  File "C:\Users\chobits\Documents\site\tdd_django\lists\tests.py", line 31, in test_home_page_can_save_a_POST_request
+    self.assertEqual(response.status_code, 302)
+AssertionError: 200 != 302
 
-OK
+----------------------------------------------------------------------
+Ran 5 tests in 0.024s
+
+FAILED (failures=1)
