@@ -3,11 +3,13 @@ F
 FAIL: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "functional_tests.py", line 56, in test_can_start_a_list_and_retrieve_it_later
-    self.assertIn('1: Buy peacock feathers', [row.text for row in rows])
-AssertionError: '1: Buy peacock feathers' not found in ['1: Use peacock feathers to make a fly']
+  File "functional_tests.py", line 57, in test_can_start_a_list_and_retrieve_it_later
+    self.check_for_row_in_list_table('2: Use peacock feathers')
+  File "functional_tests.py", line 17, in check_for_row_in_list_table
+    self.assertIn(row_text, [row.text for row in rows])
+AssertionError: '2: Use peacock feathers' not found in ['1: Use peacock feathers to make a fly']
 
 ----------------------------------------------------------------------
-Ran 1 test in 19.315s
+Ran 1 test in 20.450s
 
 FAILED (failures=1)
