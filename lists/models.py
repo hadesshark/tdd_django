@@ -1,4 +1,4 @@
 from django.db import models
 
-class Item(object):
+class Item(models.Model):
     pass
