@@ -1,5 +1,13 @@
-....
+F...
+======================================================================
+FAIL: test_home_page_can_save_a_POST_request (lists.tests.HomePageTest)
 ----------------------------------------------------------------------
-Ran 4 tests in 0.016s
+Traceback (most recent call last):
+  File "C:\Users\chobits\Documents\site\tdd_django\lists\tests.py", line 27, in test_home_page_can_save_a_POST_request
+    self.assertEqual(Item.objects.count(), 1)
+AssertionError: 0 != 1
 
-OK
+----------------------------------------------------------------------
+Ran 4 tests in 0.023s
+
+FAILED (failures=1)
